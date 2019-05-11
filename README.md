@@ -4,7 +4,7 @@ Neo4j and Python Interface for matching isomorphism subgraph of data graph
 
 ## Getting Started
 
-'Neo4j - isomorphic Subgraph matcher' is Database Management System Design project. These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. 
+'Neo4j - isomorphic Subgraph matcher' is a Database Management System Design project. These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. 
 
 ### Prerequisites
 
