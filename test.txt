@@ -1,0 +1,368 @@
+############## DEMO 1 
+CREATE (TheMatrix:Movie {title:'The Matrix', released:1999, tagline:'Welcome to the Real World'})
+CREATE (Keanu:Person {name:'Keanu Reeves', born:1964})
+CREATE (Carrie:Person {name:'Carrie-Anne Moss', born:1967})
+CREATE (Laurence:Person {name:'Laurence Fishburne', born:1961})
+CREATE (Hugo:Person {name:'Hugo Weaving', born:1960})
+CREATE (LillyW:Person {name:'Lilly Wachowski', born:1967})
+CREATE (LanaW:Person {name:'Lana Wachowski', born:1965})
+CREATE (JoelS:Person {name:'Joel Silver', born:1952})
+CREATE
+  (Keanu)-[:ACTED_IN {roles:['Neo']}]->(TheMatrix),
+  (Carrie)-[:ACTED_IN {roles:['Trinity']}]->(TheMatrix),
+  (Laurence)-[:ACTED_IN {roles:['Morpheus']}]->(TheMatrix),
+  (Hugo)-[:ACTED_IN {roles:['Agent Smith']}]->(TheMatrix),
+  (LillyW)-[:DIRECTED]->(TheMatrix),
+  (LanaW)-[:DIRECTED]->(TheMatrix),
+  (JoelS)-[:PRODUCED]->(TheMatrix)
+
+############# DEMO 1 example 2
+CREATE (TheMatrix:Movie {title:'The Matrix', released:1999, tagline:'Welcome to the Real World'})
+CREATE (Keanu:Person {name:'Keanu Reeves', born:1964})
+CREATE (Carrie:Person {name:'Carrie-Anne Moss', born:1967})
+CREATE (Laurence:Person {name:'Laurence Fishburne', born:1961})
+CREATE (Hugo:Person {name:'Hugo Weaving', born:1960})
+CREATE (LillyW:Person {name:'Lilly Wachowski', born:1967})
+CREATE (LanaW:Person {name:'Lana Wachowski', born:1965})
+CREATE (JoelS:Person {name:'Joel Silver', born:1952})
+CREATE
+  (Keanu)-[:ACTED_IN {roles:['Neo']}]->(TheMatrix),
+  (Carrie)-[:ACTED_IN {roles:['Trinity']}]->(TheMatrix),
+  (Laurence)-[:ACTED_IN {roles:['Morpheus']}]->(TheMatrix),
+  (Hugo)-[:ACTED_IN {roles:['Agent Smith']}]->(TheMatrix),
+  (LillyW)-[:DIRECTED]->(TheMatrix),
+  (LanaW)-[:DIRECTED]->(TheMatrix),
+  (JoelS)-[:PRODUCED]->(TheMatrix)
+
+CREATE (Emil:Person {name:"Emil Eifrem", born:1978})
+CREATE (Emil)-[:ACTED_IN {roles:["Emil"]}]->(TheMatrix)
+
+CREATE (TheMatrixReloaded:Movie {title:'The Matrix Reloaded', released:2003, tagline:'Free your mind'})
+CREATE
+  (Keanu)-[:ACTED_IN {roles:['Neo']}]->(TheMatrixReloaded),
+  (Carrie)-[:ACTED_IN {roles:['Trinity']}]->(TheMatrixReloaded),
+  (Laurence)-[:ACTED_IN {roles:['Morpheus']}]->(TheMatrixReloaded),
+  (Hugo)-[:ACTED_IN {roles:['Agent Smith']}]->(TheMatrixReloaded),
+  (LillyW)-[:DIRECTED]->(TheMatrixReloaded),
+  (LanaW)-[:DIRECTED]->(TheMatrixReloaded),
+  (JoelS)-[:PRODUCED]->(TheMatrixReloaded)
+
+CREATE (TheMatrixRevolutions:Movie {title:'The Matrix Revolutions', released:2003, tagline:'Everything that has a beginning has an end'})
+CREATE
+  (Keanu)-[:ACTED_IN {roles:['Neo']}]->(TheMatrixRevolutions),
+  (Carrie)-[:ACTED_IN {roles:['Trinity']}]->(TheMatrixRevolutions),
+  (Laurence)-[:ACTED_IN {roles:['Morpheus']}]->(TheMatrixRevolutions),
+  (Hugo)-[:ACTED_IN {roles:['Agent Smith']}]->(TheMatrixRevolutions),
+  (LillyW)-[:DIRECTED]->(TheMatrixRevolutions),
+  (LanaW)-[:DIRECTED]->(TheMatrixRevolutions),
+  (JoelS)-[:PRODUCED]->(TheMatrixRevolutions),
+  (JoelS)-[:PRODUCED]->(LillyW)
+
+############### DEMO 2 example 2
+CREATE (TheMatrix:Movie {title:'The Matrix', released:1999, tagline:'Welcome to the Real World'})
+CREATE (Keanu:Director {name:'Keanu Reeves', born:1964})
+CREATE (Haotian:Student {name:'Haotian Wang', born:1999})
+CREATE (Carrie:Person {name:'Carrie-Anne Moss', born:1967})
+CREATE (Laurence:Person {name:'Laurence Fishburne', born:1961})
+CREATE (Hugo:Person {name:'Hugo Weaving', born:1960})
+CREATE (LillyW:Person {name:'Lilly Wachowski', born:1967})
+CREATE (LanaW:Person {name:'Lana Wachowski', born:1965})
+CREATE (JoelS:Person {name:'Joel Silver', born:1952})
+CREATE
+  (Carrie)-[:ACTED_IN {roles:['Trinity']}]->(TheMatrix),
+  (Laurence)-[:ACTED_IN {roles:['Morpheus']}]->(TheMatrix),
+  (Hugo)-[:ACTED_IN {roles:['Agent Smith']}]->(TheMatrix),
+  (LillyW)-[:DIRECTED]->(TheMatrix),
+  (LanaW)-[:DIRECTED]->(TheMatrix)
+
+####  DEMO 2 example 2
+CREATE (TheMatrix:Movie {title:'The Matrix', released:1999, tagline:'Welcome to the Real World'})
+CREATE (Keanu:Director {name:'Keanu Reeves', born:1964})
+CREATE (Haotian:Student {name:'Haotian Wang', born:1999})
+CREATE (Carrie:Person {name:'Carrie-Anne Moss', born:1967})
+CREATE (Laurence:Person {name:'Laurence Fishburne', born:1961})
+CREATE (Hugo:Person {name:'Hugo Weaving', born:1960})
+CREATE (LillyW:Person {name:'Lilly Wachowski', born:1967})
+CREATE (LanaW:Person {name:'Lana Wachowski', born:1965})
+CREATE (JoelS:Person {name:'Joel Silver', born:1952})
+CREATE
+  (Keanu)-[:ACTED_IN {roles:['Neo']}]->(TheMatrix),
+  (Haotian)-[:Watch]->(TheMatrix),
+  (Carrie)-[:ACTED_IN {roles:['Trinity']}]->(TheMatrix),
+  (Laurence)-[:ACTED_IN {roles:['Morpheus']}]->(TheMatrix),
+  (Hugo)-[:ACTED_IN {roles:['Agent Smith']}]->(TheMatrix),
+  (LillyW)-[:DIRECTED]->(TheMatrix),
+  (LanaW)-[:DIRECTED]->(TheMatrix),
+  (JoelS)-[:PRODUCED]->(TheMatrix)
+
+
+
+############# DEMO 3
+CREATE (TheMatrix:Movie {title:'The Matrix', released:1999, tagline:'Welcome to the Real World'})
+CREATE (Keanu:Person {name:'Keanu Reeves', born:1964})
+CREATE (Haotian:Person {name:'Haotian Wang', born:1999})
+CREATE (Carrie:Person {name:'Carrie-Anne Moss', born:1967})
+CREATE (Laurence:Person {name:'Laurence Fishburne', born:1961})
+CREATE (Hugo:Person {name:'Hugo Weaving', born:1960})
+CREATE (LillyW:Person {name:'Lilly Wachowski', born:1967})
+CREATE (LanaW:Person {name:'Lana Wachowski', born:1965})
+CREATE (JoelS:Person {name:'Joel Silver', born:1952})
+CREATE
+  (Keanu)-[:ACTED_IN {roles:['Neo']}]->(TheMatrix),
+  (Haotian)-[:Watch]->(TheMatrix),
+  (Carrie)-[:ACTED_IN {roles:['Trinity']}]->(TheMatrix),
+  (Laurence)-[:ACTED_IN {roles:['Morpheus']}]->(TheMatrix),
+  (Hugo)-[:ACTED_IN {roles:['Agent Smith']}]->(TheMatrix),
+  (LillyW)-[:DIRECTED]->(TheMatrix),
+  (LanaW)-[:DIRECTED]->(TheMatrix),
+  (JoelS)-[:PRODUCED]->(TheMatrix)
+
+############# DEMO 4
+CREATE (TheMatrix:Movie {title:'The Matrix', released:1999, tagline:'Welcome to the Real World'})
+CREATE (Keanu:Person {name:'Keanu Reeves', born:1964})
+CREATE (Carrie:Person {name:'Carrie-Anne Moss', born:1967})
+CREATE (Laurence:Person {name:'Laurence Fishburne', born:1961})
+CREATE (Hugo:Person {name:'Hugo Weaving', born:1960})
+CREATE (LillyW:Person {name:'Lilly Wachowski', born:1967})
+CREATE (LanaW:Person {name:'Lana Wachowski', born:1965})
+CREATE (JoelS:Person {name:'Joel Silver', born:1952})
+CREATE
+  (TheMatrix)-[:ACTED_IN {roles:['Neo']}]->(Keanu),
+  (TheMatrix)-[:ACTED_IN {roles:['Trinity']}]->(Carrie),
+  (TheMatrix)-[:ACTED_IN {roles:['Morpheus']}]->(Laurence),
+  (TheMatrix)-[:ACTED_IN {roles:['Agent Smith']}]->(Hugo),
+  (TheMatrix)-[:DIRECTED]->(LillyW),
+  (TheMatrix)-[:DIRECTED]->(LanaW),
+  (TheMatrix)-[:PRODUCED]->(JoelS)
+
+###############  DEMO 5
+CREATE (TheMatrix:Movie {title:'The Matrix', released:1999, tagline:'Welcome to the Real World'})
+CREATE (Keanu:Person {name:'Keanu Reeves', born:1964})
+CREATE (Carrie:Person {name:'Carrie-Anne Moss', born:1967})
+CREATE (Laurence:Person {name:'Laurence Fishburne', born:1961})
+CREATE (Hugo:Person {name:'Hugo Weaving', born:1960})
+CREATE (LillyW:Person {name:'Lilly Wachowski', born:1967})
+CREATE (LanaW:Person {name:'Lana Wachowski', born:1965})
+CREATE (JoelS:Person {name:'Joel Silver', born:1952})
+CREATE
+  (Keanu)-[:ACTED_IN {roles:['Neo']}]->(TheMatrix),
+  (Carrie)-[:ACTED_IN {roles:['Trinity']}]->(TheMatrix),
+  (Laurence)-[:ACTED_IN {roles:['Morpheus']}]->(TheMatrix),
+  (Hugo)-[:ACTED_IN {roles:['Agent Smith']}]->(TheMatrix),
+  (LillyW)-[:DIRECTED]->(TheMatrix),
+  (LanaW)-[:DIRECTED]->(TheMatrix),
+  (JoelS)-[:PRODUCED]->(TheMatrix),
+  (JoelS)-[:DIRECTED]->(Keanu)
+
+
+CREATE (Emil:Person {name:"Emil Eifrem", born:1978})
+CREATE (Emil)-[:ACTED_IN {roles:["Emil"]}]->(TheMatrix)
+
+CREATE (TheMatrixReloaded:Movie {title:'The Matrix Reloaded', released:2003, tagline:'Free your mind'})
+CREATE
+  (Keanu)-[:ACTED_IN {roles:['Neo']}]->(TheMatrixReloaded),
+  (Carrie)-[:ACTED_IN {roles:['Trinity']}]->(TheMatrixReloaded),
+  (Laurence)-[:ACTED_IN {roles:['Morpheus']}]->(TheMatrixReloaded),
+  (Hugo)-[:ACTED_IN {roles:['Agent Smith']}]->(TheMatrixReloaded),
+  (LillyW)-[:DIRECTED]->(TheMatrixReloaded),
+  (LanaW)-[:DIRECTED]->(TheMatrixReloaded),
+  (JoelS)-[:PRODUCED]->(TheMatrixReloaded)
+
+CREATE (TheMatrixRevolutions:Movie {title:'The Matrix Revolutions', released:2003, tagline:'Everything that has a beginning has an end'})
+CREATE
+  (Keanu)-[:ACTED_IN {roles:['Neo']}]->(TheMatrixRevolutions),
+  (Carrie)-[:ACTED_IN {roles:['Trinity']}]->(TheMatrixRevolutions),
+  (Laurence)-[:ACTED_IN {roles:['Morpheus']}]->(TheMatrixRevolutions),
+  (Hugo)-[:ACTED_IN {roles:['Agent Smith']}]->(TheMatrixRevolutions),
+  (LillyW)-[:DIRECTED]->(TheMatrixRevolutions),
+  (LanaW)-[:DIRECTED]->(TheMatrixRevolutions),
+  (JoelS)-[:PRODUCED]->(TheMatrixRevolutions)
+
+############## DEMO 6
+CREATE (TheMatrix:Movie {title:'The Matrix', released:1999, tagline:'Welcome to the Real World'})
+CREATE (Keanu:Person {name:'Keanu Reeves', born:1964})
+CREATE (Carrie:Person {name:'Carrie-Anne Moss', born:1964, unviersity:'U of I'})
+CREATE (Laurence:Person {name:'Laurence Fishburne', born:1964})
+CREATE (Hugo:Person {name:'Hugo Weaving', born:1960})
+CREATE (LillyW:Person {name:'Lilly Wachowski', born:1967})
+CREATE (LanaW:Person {name:'Lana Wachowski', born:1965})
+CREATE (JoelS:Person {name:'Joel Silver', born:1952})
+CREATE
+  (Keanu)-[:ACTED_IN {roles:['Neo']}]->(TheMatrix),
+  (Carrie)-[:ACTED_IN {roles:['Trinity']}]->(TheMatrix),
+  (Laurence)-[:ACTED_IN {roles:['Morpheus']}]->(TheMatrix),
+  (Hugo)-[:ACTED_IN {roles:['Agent Smith']}]->(TheMatrix),
+  (LillyW)-[:DIRECTED]->(TheMatrix),
+  (LanaW)-[:DIRECTED]->(TheMatrix),
+  (JoelS)-[:PRODUCED]->(TheMatrix)
+
+################
+CREATE (TheMatrix:Movie {title:'The Matrix', released:1999, tagline:'Welcome to the Real World'})
+CREATE (Keanu:Person {name:'Keanu Reeves', born:1964})
+CREATE (Carrie:Person {name:'Carrie-Anne Moss', born:1967})
+CREATE (Laurence:Person {name:'Laurence Fishburne', born:1961})
+CREATE (Hugo:Person {name:'Hugo Weaving', born:1960})
+CREATE (LillyW:Person {name:'Lilly Wachowski', born:1967})
+CREATE (LanaW:Person {name:'Lana Wachowski', born:1965})
+CREATE (JoelS:Person {name:'Joel Silver', born:1952})
+CREATE
+  (Keanu)-[:ACTED_IN {roles:['Neo']}]->(TheMatrix),
+  (Carrie)-[:ACTED_IN {roles:['Trinity']}]->(TheMatrix),
+  (Laurence)-[:ACTED_IN {roles:['Morpheus']}]->(TheMatrix),
+  (Hugo)-[:ACTED_IN {roles:['Agent Smith']}]->(TheMatrix),
+  (LillyW)-[:DIRECTED]->(TheMatrix),
+  (LanaW)-[:DIRECTED]->(TheMatrix),
+  (JoelS)-[:PRODUCED]->(TheMatrix)
+
+CREATE (Emil:Person {name:"Emil Eifrem", born:1978})
+CREATE (Emil)-[:ACTED_IN {roles:["Emil"]}]->(TheMatrix)
+
+CREATE (TheMatrixReloaded:Movie {title:'The Matrix Reloaded', released:2003, tagline:'Free your mind'})
+CREATE
+  (Keanu)-[:ACTED_IN {roles:['Neo']}]->(TheMatrixReloaded),
+  (Carrie)-[:ACTED_IN {roles:['Trinity']}]->(TheMatrixReloaded),
+  (Laurence)-[:ACTED_IN {roles:['Morpheus']}]->(TheMatrixReloaded),
+  (Hugo)-[:ACTED_IN {roles:['Agent Smith']}]->(TheMatrixReloaded),
+  (LillyW)-[:DIRECTED]->(TheMatrixReloaded),
+  (LanaW)-[:DIRECTED]->(TheMatrixReloaded),
+  (JoelS)-[:PRODUCED]->(TheMatrixReloaded)
+
+CREATE (TheMatrixRevolutions:Movie {title:'The Matrix Revolutions', released:2003, tagline:'Everything that has a beginning has an end'})
+CREATE
+  (Keanu)-[:ACTED_IN {roles:['Neo']}]->(TheMatrixRevolutions),
+  (Carrie)-[:ACTED_IN {roles:['Trinity']}]->(TheMatrixRevolutions),
+  (Laurence)-[:ACTED_IN {roles:['Morpheus']}]->(TheMatrixRevolutions),
+  (Hugo)-[:ACTED_IN {roles:['Agent Smith']}]->(TheMatrixRevolutions),
+  (LillyW)-[:DIRECTED]->(TheMatrixRevolutions),
+  (LanaW)-[:DIRECTED]->(TheMatrixRevolutions),
+  (JoelS)-[:PRODUCED]->(TheMatrixRevolutions),
+
+###
+CREATE (Longze:Person {name:'Longze'})
+CREATE (Haotian:Person {name:'Haotian'})
+CREATE (Longze)-[:Friend]->(Haotian)
+
+#############
+CREATE (TheMatrix:Movie {title:'The Matrix', released:1999, tagline:'Welcome to the Real World'})
+CREATE (Keanu:Person {name:'Keanu Reeves', born:1964})
+CREATE (Carrie:Person {name:'Carrie-Anne Moss', born:1967})
+CREATE (Laurence:Person {name:'Laurence Fishburne', born:1961})
+CREATE (Hugo:Person {name:'Hugo Weaving', born:1960})
+CREATE (LillyW:Person {name:'Lilly Wachowski', born:1967})
+CREATE (LanaW:Person {name:'Lana Wachowski', born:1965})
+CREATE (JoelS:Person {name:'Joel Silver', born:1952})
+CREATE
+  (TheMatrix)-[:ACTED_IN ]->(Keanu),
+  (TheMatrix)-[:ACTED_IN {roles:['Trinity']}]->(Carrie),
+  (TheMatrix)-[:ACTED_IN {roles:['Morpheus']}]->(Laurence),
+  (TheMatrix)-[:ACTED_IN {roles:['Agent Smith']}]->(Hugo),
+  (TheMatrix)-[:DIRECTED]->(LillyW),
+  (TheMatrix)-[:DIRECTED]->(LanaW),
+  (TheMatrix)-[:PRODUCED]->(JoelS)
+##############
+
+CREATE (TheMatrix:Movie {title:'The Matrix', released:1999, tagline:'Welcome to the Real World'})
+CREATE (Keanu:Person {name:'Keanu Reeves', born:1964})
+CREATE (Carrie:Person{name:'Carrie-Anne Moss', born:1967})
+CREATE (Laurence:Person {name:'Laurence Fishburne', born:1961})
+CREATE (Hugo:Person {name:'Hugo Weaving', born:1960})
+CREATE (LillyW:Person {name:'Lilly Wachowski', born:1967})
+CREATE (LanaW:Person {name:'Lana Wachowski', born:1965})
+CREATE (JoelS:Person {name:'Joel Silver', born:1952})
+CREATE
+  (Keanu)-[:ACTED_IN {roles:['Neo']}]->(TheMatrix),
+  (Carrie)-[:ACTED_IN {roles:['Trinity']}]->(TheMatrix),
+  (Laurence)-[:ACTED_IN {roles:['Morpheus']}]->(TheMatrix),
+  (TheMatrix)-[:ACTED_IN {roles:['Agent Smith']}]->(Hugo),
+  (TheMatrix)-[:DIRECTED]->(LillyW),
+  (TheMatrix)-[:DIRECTED]->(LanaW),
+  (TheMatrix)-[:PRODUCED]->(JoelS)
+
+#########
+CREATE (TheMatrix:Movie {title:'The Matrix', released:1999, tagline:'Welcome to the Real World'})
+CREATE (Keanu:Person {name:'Keanu Reeves', born:1964})
+CREATE (Carrie:Person {name:'Carrie-Anne Moss', born:1967})
+CREATE (Laurence:Person {name:'Laurence Fishburne', born:1961})
+CREATE (Hugo:Person {name:'Hugo Weaving', born:1960})
+CREATE (LillyW:Person {name:'Lilly Wachowski', born:1967})
+CREATE (LanaW:Person {name:'Lana Wachowski', born:1965})
+CREATE (JoelS:Person {name:'Joel Silver', born:1952})
+CREATE
+  (Keanu)-[:ACTED_IN {roles:['Neo']}]->(TheMatrix),
+  (Carrie)-[:ACTED_IN {roles:['Trinity']}]->(TheMatrix),
+  (Laurence)-[:ACTED_IN {roles:['Morpheus']}]->(TheMatrix),
+  (Hugo)-[:ACTED_IN {roles:['Agent Smith']}]->(TheMatrix),
+  (LillyW)-[:DIRECTED]->(TheMatrix),
+  (LanaW)-[:DIRECTED]->(TheMatrix),
+  (JoelS)-[:PRODUCED]->(TheMatrix)
+
+CREATE (Emil:Person {name:"Emil Eifrem", born:1978})
+CREATE (Emil)-[:ACTED_IN {roles:["Emil"]}]->(TheMatrix)
+
+CREATE (TheMatrixReloaded:Movie {title:'The Matrix Reloaded', released:2003, tagline:'Free your mind'})
+CREATE
+  (Keanu)-[:ACTED_IN {roles:['Neo']}]->(TheMatrixReloaded),
+  (Carrie)-[:ACTED_IN {roles:['Trinity']}]->(TheMatrixReloaded),
+  (Laurence)-[:ACTED_IN {roles:['Morpheus']}]->(TheMatrixReloaded),
+  (Hugo)-[:ACTED_IN {roles:['Agent Smith']}]->(TheMatrixReloaded),
+  (LillyW)-[:DIRECTED]->(TheMatrixReloaded),
+  (LanaW)-[:DIRECTED]->(TheMatrixReloaded),
+  (JoelS)-[:PRODUCED]->(TheMatrixReloaded)
+
+CREATE (TheMatrixRevolutions:Movie {title:'The Matrix Revolutions', released:2003, tagline:'Everything that has a beginning has an end'})
+CREATE
+  (Keanu)-[:ACTED_IN {roles:['Neo']}]->(TheMatrixRevolutions),
+  (Carrie)-[:ACTED_IN {roles:['Trinity']}]->(TheMatrixRevolutions),
+  (Laurence)-[:ACTED_IN {roles:['Morpheus']}]->(TheMatrixRevolutions),
+  (Hugo)-[:ACTED_IN {roles:['Agent Smith']}]->(TheMatrixRevolutions),
+  (LillyW)-[:DIRECTED]->(TheMatrixRevolutions),
+  (LanaW)-[:DIRECTED]->(TheMatrixRevolutions),
+  (JoelS)-[:PRODUCED]->(TheMatrixRevolutions),
+  (JoelS)-[:PRODUCED]->(Hugo)
+
+############ Demo 8
+CREATE (a:letter {Letter:'a'})
+CREATE (b:letter {Letter:'b'})
+CREATE (c:letter {Letter:'c'})
+CREATE (d:letter {Letter:'a'})
+CREATE (g:letter {Letter:'b'})
+CREATE (h:letter {Letter:'c'})
+CREATE (i:letter {Letter:'a'})
+CREATE (j:letter {Letter:'b'})
+
+CREATE
+  (Keanu)-[:ACTED_IN {roles:['Neo']}]->(TheMatrixRevolutions),
+  (Carrie)-[:ACTED_IN {roles:['Trinity']}]->(TheMatrixRevolutions)
+######### Demo 8
+
+
+########## Demo 9
+######Data Graph
+
+CREATE (N_1:number {number:'1'})
+CREATE (N_2:number {number:'2'})
+CREATE (N_3:number {number:'3'})
+CREATE (N_4:number {number:'4'})
+CREATE
+  (N_2)-[:forward]->(N_3),
+  (N_1)-[:forward]->(N_4),
+  (N_1)-[:forward]->(N_2),
+  (N_1)-[:forward]->(N_3)
+
+
+######Query Graph
+CREATE (N_a:letter {letter:'a'})
+CREATE (N_b:letter {letter:'b'})
+CREATE (N_c:letter {letter:'c'})
+CREATE
+  (N_a)-[:forward]->(N_b),
+  (N_a)-[:forward]->(N_c)
+
+
+
+
+####### delete all graphs
+MATCH (n) DETACH DELETE n
+
+####### show graph
+MATCH (n) RETURN n
