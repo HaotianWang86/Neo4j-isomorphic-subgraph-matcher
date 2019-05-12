@@ -13,6 +13,7 @@ Neo4j enterprise instance: It's a graph database platform help to input and load
 * [Py2neo](https://pypi.org/project/py2neo/) - Py2neo working with Neo4j from within Python
 * [webbrowser](https://docs.python.org/2/library/webbrowser.html) - webbrowser connecting web from within Python
 * [NetworkX](https://networkx.github.io/) - NetworkX is a Python package for the creation, manipulation, and study of the structure, dynamics, and functions of complex networks
+* [Pandas](https://pandas.pydata.org/) - an open source data analysis library
 
 ## Starting playing the graphical user interface
 
