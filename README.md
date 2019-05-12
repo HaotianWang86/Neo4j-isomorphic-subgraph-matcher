@@ -56,11 +56,12 @@ issue the following command in the Anaconda command prompt/terminal with correct
 ```
 python finalGUI.py
 ```
-[Run the interface in Terminal](https://github.com/HaotianWang86/Neo4j-isomorphic-subgraph-matcher/blob/master/figures/start_interface.PNG)
+[Run the interface in Terminal](https://github.com/HaotianWang86/Neo4j-isomorphic-subgraph-matcher/blob/master/figures/start_interface.PNG)<br />
+after running above command, will jump out a following graphical user interfal (GUI)
 
 ![A interface screenshot](https://github.com/HaotianWang86/Neo4j-isomorphic-subgraph-matcher/blob/master/figures/interface_v2.PNG)
 
-Also, you can run the code in a Python IDE, such as SPYDER, PYCHARM.
+Also, you can run the code in a Python IDE, such as SPYDER, PYCHARM without input directories.
 
 ### 6. Neo4j port information <br />
 You may need to change port information in Neo4j, if you are not using a defaulted port in neo4j <br />
