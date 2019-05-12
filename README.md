@@ -58,9 +58,17 @@ python finalGUI.py
 
 Also, you can run the code in a Python IDE, such as SPYDER, PYCHARM.
 
-6. You may need to change port information in Neo4j, defaulted Neo4j port <br />
+6. You may need to change port information in Neo4j, <br />
+defaulted Neo4j port: "http://localhost:7474" <br />
 Username: neo4j <br />
-Password: neo4j
+Password: neo4j <br />
+
+If needed
+change the defaulted Neo4j port information, username and password: <br />
+https://github.com/HaotianWang86/Neo4j-isomorphic-subgraph-matcher/blob/9afbaa4b84aa738a8cefee9f95214fcec4b1a14d/finalGUI.py#L24
+
+
+
 
 6. Generate the Data graph
 
