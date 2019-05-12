@@ -94,11 +94,11 @@ Click visualize button in query graph textbox, call the neo4j data visualization
 
 ### 11. Isomorphism subgraph Matching<br />
 Click matching button in matching textbox, call the VF2 algorithm judge is a isomorphic subgraph or not and calculates all number of matching subgraphs.<br />
-[a sample matching output]((https://github.com/HaotianWang86/Neo4j-isomorphic-subgraph-matcher/blob/master/figures/matchingoutput.png)
+[a sample matching output](https://github.com/HaotianWang86/Neo4j-isomorphic-subgraph-matcher/blob/master/figures/matchingoutput.png)
 
 ### 12. Isomorphism subgraph informations<br />
-Click subgraph information button in matching textbox, call the VF2 algorithm return all the matching subgraph's nodes and the data graph's nodes
-
+Click subgraph information button in matching textbox, call the VF2 algorithm return all the query subgraph's nodes and the matching data graph's nodes
+[a sample information output](https://github.com/HaotianWang86/Neo4j-isomorphic-subgraph-matcher/blob/master/figures/matchingnodes.png)
 
 ## Py2neo Tutorial
 
