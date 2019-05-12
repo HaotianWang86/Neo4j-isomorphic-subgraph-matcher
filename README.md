@@ -77,17 +77,19 @@ and <br />
 https://github.com/HaotianWang86/Neo4j-isomorphic-subgraph-matcher/blob/38ffec01f4c1b02768ed19f64670e11da88dd31e/finalGUI.py#L92
 
 
-6. Generate the Data graph
-Input the desired Data graph by using Cypher querying language in Data graph textbox. 
+6. Generate the Data graph <br />
+Input the desired Data graph by using Cypher querying language in Data graph textbox. <br />
+[Data graph textbox](https://github.com/HaotianWang86/Neo4j-isomorphic-subgraph-matcher/blob/master/figures/datagraphbox.PNG)
 
-7. Visualize the data graph
+7. Visualize the data graph<br />
+Click visualize button in data graph textbox, call the neo4j data visualization tool<br />
 
+8. Generate the Query graph<br />
+Input the desired query graph by using Cypher querying language in Data graph textbox. <br />
+[Data graph textbox](https://github.com/HaotianWang86/Neo4j-isomorphic-subgraph-matcher/blob/master/figures/querygraphbox.PNG)
 
-8. Generate the Query graph
-
-
-9. Visualize the query graph
-
+9. Visualize the query graph<br />
+Click visualize button in query graph textbox, call the neo4j data visualization tool<br />
 
 10. Isomorphism subgraph Matching
 
