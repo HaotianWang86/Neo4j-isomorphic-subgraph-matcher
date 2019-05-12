@@ -58,8 +58,8 @@ python finalGUI.py
 
 Also, you can run the code in a Python IDE, such as SPYDER, PYCHARM.
 
-6. You may need to change port information in Neo4j, defaulted Neo4j port
-Username: neo4j
+6. You may need to change port information in Neo4j, defaulted Neo4j port <br />
+Username: neo4j <br />
 Password: neo4j
 
 6. Generate the Data graph
