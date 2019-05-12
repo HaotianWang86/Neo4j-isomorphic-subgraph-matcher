@@ -97,7 +97,8 @@ Click matching button in matching textbox, call the VF2 algorithm judge is a iso
 [a sample matching output](https://github.com/HaotianWang86/Neo4j-isomorphic-subgraph-matcher/blob/master/figures/matchingoutput.png)
 
 ### 12. Isomorphism subgraph informations<br />
-Click subgraph information button in matching textbox, call the VF2 algorithm return all the query subgraph's nodes and the matching data graph's nodes
+Click subgraph information button in matching textbox, call the VF2 algorithm return all the query subgraph's nodes and the matching data graph's nodes<br />
+Parts of information, start from No.5030 isomorphic subgraph to No.5040 isomorphic subgraph<br />
 [a sample information output](https://github.com/HaotianWang86/Neo4j-isomorphic-subgraph-matcher/blob/master/figures/matchingnodes.png)
 
 ## Py2neo Tutorial
