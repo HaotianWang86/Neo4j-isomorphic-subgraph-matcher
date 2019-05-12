@@ -90,6 +90,7 @@ Input the desired query graph by using Cypher querying language in Data graph te
 
 ### 10. Visualize the query graph<br />
 Click visualize button in query graph textbox, call the neo4j data visualization tool<br />
+[Visualize a sample query graph](https://github.com/HaotianWang86/Neo4j-isomorphic-subgraph-matcher/blob/master/figures/visualizequerygraph.PNG)
 
 ### 11. Isomorphism subgraph Matching<br />
 Click matching button in matching textbox, call the VF2 algorithm judge is a isomorphic subgraph or not and calculates all number of matching subgraphs.<br />
