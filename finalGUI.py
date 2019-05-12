@@ -21,7 +21,7 @@ import tkinter as tk
 
 def connectneo4j_graph():
     #########   local host/user/password depend on your neo4j server  ########################change here
-    graph = Graph("http://localhost:7474", user="neo4j", password="19960229")
+    graph = Graph("http://localhost:7474", user="neo4j", password="neo4j")
     return graph
 
 def format_response():
