@@ -21,9 +21,9 @@ A step by step series of examples that tell you how to get a development env run
 
 Say what the step will be
 
-1. Download the 'finalGUI.py' to C:\ drive. 
+###1. Download the 'finalGUI.py' to C:\ drive. 
 
-2. Following Python packages need to be installed if already not installed 
+###2. Following Python packages need to be installed if already not installed 
 Run following command in terminal
 Downloading networkx - A graph package in Python programming language
 ```
@@ -42,15 +42,15 @@ Downloading py2neo - A python package help to edit the Neo4j Graph
 pip install py2neo
 ```
 
-3. Download the Neo4j Enterprise version.
+###3. Download the Neo4j Enterprise version.
 
 * [Neo4j](https://neo4j.com/download/) - Neo4j enterprise instance Download
 
-4. Open the Neo4j Enterprise version and create an graph port in Neo4j:
+###4. Open the Neo4j Enterprise version and create an graph port in Neo4j:
 
 [create port](https://github.com/HaotianWang86/Neo4j-isomorphic-subgraph-matcher/blob/master/figures/neo4j.PNG)
 
-5. Run the interface
+###5. Run the interface
 
 issue the following command in the Anaconda command prompt/terminal with correct dirs:
 ```
@@ -62,7 +62,7 @@ python finalGUI.py
 
 Also, you can run the code in a Python IDE, such as SPYDER, PYCHARM.
 
-6. Neo4j port information <br />
+###6. Neo4j port information <br />
 You may need to change port information in Neo4j, if you are not using a defaulted port in neo4j <br />
 defaulted Neo4j port: "http://localhost:7474" <br />
 Username: neo4j <br />
@@ -77,21 +77,23 @@ and <br />
 https://github.com/HaotianWang86/Neo4j-isomorphic-subgraph-matcher/blob/38ffec01f4c1b02768ed19f64670e11da88dd31e/finalGUI.py#L92
 
 
-6. Generate the Data graph <br />
+###6. Generate the Data graph <br />
 Input the desired Data graph by using Cypher querying language in Data graph textbox. <br />
 [Data graph textbox](https://github.com/HaotianWang86/Neo4j-isomorphic-subgraph-matcher/blob/master/figures/datagraphbox.PNG)
 
-7. Visualize the data graph<br />
+###7. Visualize the data graph<br />
 Click visualize button in data graph textbox, call the neo4j data visualization tool<br />
 
-8. Generate the Query graph<br />
+###8. Generate the Query graph<br />
 Input the desired query graph by using Cypher querying language in Data graph textbox. <br />
 [Data graph textbox](https://github.com/HaotianWang86/Neo4j-isomorphic-subgraph-matcher/blob/master/figures/querygraphbox.PNG)
 
-9. Visualize the query graph<br />
+###9. Visualize the query graph<br />
 Click visualize button in query graph textbox, call the neo4j data visualization tool<br />
 
-10. Isomorphism subgraph Matching
+###10. Isomorphism subgraph Matching<br />
+Click matching button in matching textbox, call the VF2 algorithm judge is a isomorphic subgraph or not and calculates all number of matching subgraphs.<br />
+
 
 ### Create your own Data graph port in Neo4j Desktop
 
