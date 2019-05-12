@@ -52,6 +52,8 @@ pip install py2neo
 ```
 python finalGUI.py
 ```
+[Run the interface in Terminal](https://github.com/HaotianWang86/Neo4j-isomorphic-subgraph-matcher/blob/master/figures/start_interface.PNG)
+
 [A interface screenshot](https://github.com/HaotianWang86/Neo4j-isomorphic-subgraph-matcher/blob/master/figures/interface.PNG)
 
 Also, you can run the code in a Python IDE, such as SPYDER, PYCHARM.
