@@ -43,12 +43,16 @@ pip install py2neo
 ```
 
 3. Download the Neo4j Enterprise version.
+
 * [Neo4j](https://neo4j.com/download/) - Neo4j enterprise instance Download
 
 4. Open the Neo4j Enterprise version and create an graph port in Neo4j:
+
 [create port](https://github.com/HaotianWang86/Neo4j-isomorphic-subgraph-matcher/blob/master/figures/neo4j.PNG)
 
-5. Run the interface - issue the following command in the Anaconda command prompt/terminal with correct dirs:
+5. Run the interface
+
+issue the following command in the Anaconda command prompt/terminal with correct dirs:
 ```
 python finalGUI.py
 ```
@@ -58,16 +62,19 @@ python finalGUI.py
 
 Also, you can run the code in a Python IDE, such as SPYDER, PYCHARM.
 
-6. You may need to change port information in Neo4j, <br />
+6. Neo4j port information 
+You may need to change port information in Neo4j, if you are not using a defaulted port in neo4j <br />
 defaulted Neo4j port: "http://localhost:7474" <br />
 Username: neo4j <br />
 Password: neo4j <br />
 
 If needed
 change the defaulted Neo4j port information, username and password: <br />
-https://github.com/HaotianWang86/Neo4j-isomorphic-subgraph-matcher/blob/9afbaa4b84aa738a8cefee9f95214fcec4b1a14d/finalGUI.py#L24
-
-
+https://github.com/HaotianWang86/Neo4j-isomorphic-subgraph-matcher/blob/38ffec01f4c1b02768ed19f64670e11da88dd31e/finalGUI.py#L24
+change the defaulted Neo4j port information in visualization function: <br />
+https://github.com/HaotianWang86/Neo4j-isomorphic-subgraph-matcher/blob/38ffec01f4c1b02768ed19f64670e11da88dd31e/finalGUI.py#L85 <br />
+and <br />
+https://github.com/HaotianWang86/Neo4j-isomorphic-subgraph-matcher/blob/38ffec01f4c1b02768ed19f64670e11da88dd31e/finalGUI.py#L92
 
 
 6. Generate the Data graph
