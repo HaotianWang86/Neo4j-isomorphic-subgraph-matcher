@@ -54,9 +54,13 @@ python finalGUI.py
 ```
 [Run the interface in Terminal](https://github.com/HaotianWang86/Neo4j-isomorphic-subgraph-matcher/blob/master/figures/start_interface.PNG)
 
-[A interface screenshot](https://github.com/HaotianWang86/Neo4j-isomorphic-subgraph-matcher/blob/master/figures/interface.PNG)
+[A interface screenshot](https://github.com/HaotianWang86/Neo4j-isomorphic-subgraph-matcher/blob/master/figures/interface_v2.PNG)
 
 Also, you can run the code in a Python IDE, such as SPYDER, PYCHARM.
+
+6. You may need to change port information in Neo4j, defaulted Neo4j port
+Username: neo4j
+Password: neo4j
 
 6. Generate the Data graph
 
