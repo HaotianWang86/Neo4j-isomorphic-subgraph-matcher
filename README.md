@@ -21,7 +21,7 @@ A step by step series of examples that tell you how to get a development env run
 
 Say what the step will be
 
-### 1. Download the 'finalGUI.py' to C:\ drive. 
+### 1. Download the 'finalGUI.py' to D:\ drive. 
 
 ### 2. Following Python packages need to be installed if already not installed 
 Run following command in terminal
@@ -52,7 +52,7 @@ pip install py2neo
 
 ### 5. Run the interface
 
-issue the following command in the Anaconda command prompt/terminal with correct dirs:
+issue the following command in the Anaconda command prompt/terminal with correct directorys:
 ```
 python finalGUI.py
 ```
