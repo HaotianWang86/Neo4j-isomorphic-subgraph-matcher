@@ -14,27 +14,72 @@ Neo4j enterprise instance: It's a graph database platform help to input and load
 * [webbrowser](https://docs.python.org/2/library/webbrowser.html) - webbrowser connecting web from within Python
 * [NetworkX](https://networkx.github.io/) - NetworkX is a Python package for the creation, manipulation, and study of the structure, dynamics, and functions of complex networks
 
-### Installing
+## Starting playing the graphical user interface
 
 A step by step series of examples that tell you how to get a development env running
 
 Say what the step will be
 
-1. Downloading Neo4j
+1. Download the 'finalGUI.py' to D:\ drive. 
 
-* [Neo4j](https://neo4j.com/download/) - Neo4j enterprise instance Download
-
-2. Downloading py2neo
+2. Following Python packages need to be installed if already not installed 
+Run following command in terminal
+Downloading networkx - A graph package in Python programming language
+```
+pip install networkx
+```
+Downloading webbrowser - A web browser in Python
+```
+python -m webbrowser -t "http://www.python.org"
+```
+Downloading pandas - A data analysis tool help to save the graph to local
+```
+pip install pandas 
+```
+Downloading py2neo - A python package help to edit the Neo4j Graph
 ```
 pip install py2neo
 ```
 
-3. Downloading webbrowser
+3. Download the Neo4j Enterprise version.
+* [Neo4j](https://neo4j.com/download/) - Neo4j enterprise instance Download
 
-Run following command in terminal
+4. Open the Neo4j Enterprise version and create an graph port in Neo4j:
+[create port](https://github.com/HaotianWang86/Neo4j-isomorphic-subgraph-matcher/blob/master/figures/neo4j.PNG)
+
+5. Run the interface - issue the following command in the Anaconda command prompt/terminal with correct dirs:
 ```
-python -m webbrowser -t "http://www.python.org"
+python finalGUI.py
 ```
+[A interface screenshot](https://github.com/HaotianWang86/Neo4j-isomorphic-subgraph-matcher/blob/master/figures/interface.PNG)
+
+Also, you can run the code in a Python IDE, such as SPYDER, PYCHARM.
+
+6. Generate the Data graph
+
+
+7. Visualize the data graph
+
+
+8. Generate the Query graph
+
+
+9. Visualize the query graph
+
+
+10. Isomorphism subgraph Matching
+
+### Create your own Data graph port in Neo4j Desktop
+
+1. open Neo4j enterprise instance, create a graph database. 
+[create graph](https://github.com/HaotianWang86/NEO4J-subgraphmatcher/blob/master/fig/create%20graph.PNG)
+
+2. Start Running data graph 
+
+3. Check the port informations. [port informations](https://github.com/HaotianWang86/NEO4J-subgraphmatcher/blob/master/fig/HTTP%20port.PNG)
+
+4. Change the Neo4j Port information, User name and Password in interface. 
+
 ## Loading Graphs
 ### Create your own Data graph port in Neo4j Desktop
 
