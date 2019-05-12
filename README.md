@@ -52,12 +52,12 @@ pip install py2neo
 
 ### 5. Run the interface
 
-issue the following command in the Anaconda command prompt/terminal with correct directorys:
+Issue the following command in the Anaconda command prompt/terminal with correct directorys:
 ```
 python finalGUI.py
 ```
 [Run the interface in Terminal](https://github.com/HaotianWang86/Neo4j-isomorphic-subgraph-matcher/blob/master/figures/start_interface.PNG)<br />
-after running above command, will jump out a following graphical user interfal (GUI)
+After running above command, will jump out a following graphical user interfal (GUI)
 
 ![A interface screenshot](https://github.com/HaotianWang86/Neo4j-isomorphic-subgraph-matcher/blob/master/figures/interface_v2.PNG)
 
@@ -65,7 +65,7 @@ Also, you can run the code in a Python IDE, such as SPYDER, PYCHARM without inpu
 
 ### 6. Neo4j port information <br />
 You may need to change port information in Neo4j, if you are not using a defaulted port in neo4j <br />
-defaulted Neo4j port: "http://localhost:7474" <br />
+Defaulted Neo4j port: "http://localhost:7474" <br />
 Username: neo4j <br />
 Password: neo4j <br />
 
