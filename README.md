@@ -21,7 +21,7 @@ A step by step series of examples that tell you how to get a development env run
 
 Say what the step will be
 
-1. Download the 'finalGUI.py' to D:\ drive. 
+1. Download the 'finalGUI.py' to C:\ drive. 
 
 2. Following Python packages need to be installed if already not installed 
 Run following command in terminal
