@@ -23,7 +23,7 @@ Say what the step will be
 
 ### 1. Download the 'finalGUI.py' to D:\ drive. 
 
-### 2. Following Python packages need to be installed if already not installed 
+### 2. Following Python packages need to be installed 
 Run following command in terminal
 Downloading networkx - A graph package in Python programming language
 ```
