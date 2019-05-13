@@ -655,11 +655,11 @@ CREATE
   (Hugo)-[:ACTED_IN {roles:['Agent Smith']}]->(TheMatrixRevolutions),
   (LillyW)-[:DIRECTED]->(TheMatrixRevolutions),
   (LanaW)-[:DIRECTED]->(TheMatrixRevolutions),
-  (JoelS)-[:PRODUCED]->(TheMatrixRevolutions)
-  (JoelS)-[:PRODUCED]->(Keanu)
-  (JoelS)-[:PRODUCED]->(Laurence)
-  (JoelS)-[:PRODUCED]->(Hugo)
-  (JoelS)-[:PRODUCED]->(LillyW)
+  (JoelS)-[:PRODUCED]->(TheMatrixRevolutions),
+  (JoelS)-[:PRODUCED]->(Keanu),
+  (JoelS)-[:PRODUCED]->(Laurence),
+  (JoelS)-[:PRODUCED]->(Hugo),
+  (JoelS)-[:PRODUCED]->(LillyW),
   (JoelS)-[:PRODUCED]->(LanaW)
 
 
