@@ -1,8 +1,8 @@
 
-querygraph_localpaths.txt   the file to store the query graph edges information
+querygraph_localpaths.txt   an example of the file to store the query graph edges information
 
-querygraph_localnodes.txt   the file to store the query graph nodes information
+querygraph_localnodes.txt   an example of the file to store the query graph nodes information
 
-datagraph_localpaths.txt    the file to store the data graph edges information
+datagraph_localpaths.txt    an example of the file to store the data graph edges information
 
-datagraph_localnodes.txt    the file to store the data graph nodes information
+datagraph_localnodes.txt    an example of the file to store the data graph nodes information
