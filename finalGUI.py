@@ -52,7 +52,7 @@ def load_datagraph(datagraph_entry):
         np.savetxt('datagraph_localpaths.txt',paths,fmt='%s')   
         datagraph_label['text'] = format_response()
     except:
-        error_str = 'Make sure you open the Neo4j\n'+'Are you input correctly in Cypher Syntax' 
+        error_str = 'Make sure you open the Neo4j\n'+'Make sure you input correctly in Cypher Syntax' 
         datagraph_label['text'] = error_str
 
     
@@ -71,8 +71,8 @@ def load_querygraph(datagraph_entry):
         np.savetxt('querygraph_localpaths.txt',paths,fmt='%s')   
         querygraph_label['text'] = format_response() 
     except:        
-        error_str = 'Make sure you open the Neo4j\n'+'Are you input correctly in Cypher Syntax' 
-        datagraph_label['text'] = error_str
+        error_str = 'Make sure you open the Neo4j\n'+'Make sure you input correctly in Cypher Syntax' 
+        querygraph_label['text'] = error_str
         
         
 # =============================================================================
