@@ -84,6 +84,7 @@ Input the desired Data graph by using Cypher querying language in Data graph tex
 
 ### 8. Visualize the data graph<br />
 Click visualize button in data graph textbox, call the neo4j data visualization tool<br />
+[Visualize a sample data graph](https://github.com/HaotianWang86/Neo4j-isomorphic-subgraph-matcher/blob/master/figures/datagraphvisualize.PNG)
 
 ### 9. Generate the Query graph<br />
 Input the desired query graph by using Cypher querying language in Data graph textbox. <br />
