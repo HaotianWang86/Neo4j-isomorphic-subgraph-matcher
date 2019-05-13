@@ -5,4 +5,4 @@ querygraph_localnodes.txt   the file to store the query graph nodes information
 
 datagraph_localpaths.txt    the file to store the data graph edges information
 
-datagraph_localnodes.txt    the file to store the query graph nodes information
+datagraph_localnodes.txt    the file to store the data graph nodes information
