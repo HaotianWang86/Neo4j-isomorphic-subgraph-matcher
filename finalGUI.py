@@ -401,6 +401,7 @@ def isomorphism_subgraph_matching():
     n= 0
     for subgraph in DiGM.subgraph_isomorphisms_iter():
         n += 1
+        print(n)
     Questions = 'Is subgraph isomorphism??'
     ISanswer = DiGM.subgraph_is_isomorphic()
     ISanswer = str(ISanswer)
