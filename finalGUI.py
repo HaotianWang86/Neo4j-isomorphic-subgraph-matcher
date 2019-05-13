@@ -444,7 +444,7 @@ def isomorphism_subgraph_matching_nodes():
         subgraph_list.append(subgraph)
     output_list = dict(zip(num_list,subgraph_list))
     print(output_list)
-    matchinglabel['text'] = output_list
+#    matchinglabel['text'] = output_list                 ###show the results of a large graph in interface takes longtime 
 
 
 # =============================================================================
