@@ -80,7 +80,8 @@ https://github.com/HaotianWang86/Neo4j-isomorphic-subgraph-matcher/blob/38ffec01
 
 ### 7. Generate the Data graph <br />
 Input the desired Data graph by using Cypher querying language in Data graph textbox. <br />
-[Data graph textbox](https://github.com/HaotianWang86/Neo4j-isomorphic-subgraph-matcher/blob/master/figures/datagraphbox.PNG)
+[Data graph textbox](https://github.com/HaotianWang86/Neo4j-isomorphic-subgraph-matcher/blob/master/figures/datagraphbox.PNG)<br />
+load the data graph may takes 2-3 mins, due to interface's responding time is not excellent
 
 ### 8. Visualize the data graph<br />
 Click visualize button in data graph textbox, call the neo4j data visualization tool<br />
